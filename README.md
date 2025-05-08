@@ -18,21 +18,25 @@ Você precisa do **Node.js** instalado no seu computador.
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/MaisPratti.git
+git clone https://github.com/NicolasMarques1610/MaisPratti.git
+```
 
 2. Instale as dependências:
 
 ```bash
 npm install
+```
 
 3. Como rodar o arquivo.js:
 
 ```bash
 node pasta/nome-arquivo
+```
 
-Exemplo:
+Exemplo do arquivo **menu.js**, em que está um menu que você consegue rodar todos os exercícios por ele:
 
 ```bash
 exeAvaliativo01-estruturasBasicas/menu.js
+```
 
 Outra forma é clicando no botão de play do VSCode.
