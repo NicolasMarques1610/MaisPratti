@@ -5,8 +5,8 @@ const prompt = require('prompt-sync')();
 let numero;
 
 do {
-    numero = Number(prompt("Digite um numero entre 1 e 10: "));
-} while (isNaN(numero) || numero < 1 || numero > 10);
+    numero = Number(prompt("Digite um numero: "));
+} while (isNaN(numero) || numero < 1);
 
 for (let i = 1; i <= 10; i++) {
     console.log(`${numero} x ${i} = ${numero * i}`)
