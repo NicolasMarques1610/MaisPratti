@@ -2,7 +2,11 @@
 
 const prompt = require("prompt-sync")();
 
-const numero = Number(prompt("Digite um número inteiro: "));
+let numero;
+
+do {
+  numero = Number(prompt("Digite um número inteiro: "));
+} while(isNaN(numero) || !Number.isInteger(numero));
 
 for (let i = 0; i < 10; i++) {
   console.log(numero);
