@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Desenvolvimento Web, HTML, CSS e JS">
+    <meta name="author" content="Nicolas">
+    <title>Primeira Aula</title>
+    <style>
+        a {
+            font-weight: bold;
+            color: rgb(0, 64, 255);
+            border: 1px solid;
+            text-decoration: none;
+        }
+        p {
+            font-size: 0.9em;
+            line-height: 1.4;
+            background-color: rgb(12, 131, 235);
+            color: white;
+        }
+        ul {
+            font-size: 1.2em;
+            line-height: 1.6;
+            background-color: rgb(0, 64, 255);
+            color: white;
+            list-style: square;
+            border: 1px solid black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: aqua;
+            padding: 5px;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!--Referências e tipos de Título-->
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html">Sobre mim</a>
+
+            <h1>Aprendendo HTML na +PraTI</h1>
+            <h2>Aprendendo HTML na +PraTI</h2>
+            <h3>Aprendendo HTML na +PraTI</h3>
+            <h4>Aprendendo HTML na +PraTI</h4>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!--Parágrafos com exemplos de tags-->
+    <section>
+        <p>
+            Lorem Ipsum <code>&lt;header&gt;</code> simply dummy text of the printing and typesetting industry. <sub>Subescrito</sub> Lorem Ipsum <sup>lorem</sup> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+    <hr>
+
+    <!--Citações, marcações-->
+    <section>
+        <p>
+            Veja a sigla: <abbr title="JavaScript Object Notation">JSON</abbr>
+        </p>
+        <blockquote cite="https://wikipedia.com">
+            A Web é construída por todos nós.
+        </blockquote>
+        <p>
+            Como disse professor Jaques: <q>Só sei que nada sei.</q>
+        </p>
+        <p>
+            O inter é o <strong>Melhor</strong>.
+        </p>
+        <p>
+            Porto Alegre é uma cidade que possui duas equipes: Inter e <s>Grêmio</s> São José.
+        </p>
+        <p>
+            Geralt de Rívia é um grande <em>Bruxo.</em>
+        </p>
+        <p>
+            Homem-Aranha é o <u>amigo</u> da vizinhança.
+        </p>
+    </section>
+
+    <hr>
+
+    <!--Lista-->
+    <section>
+        <h2>Menu Principal</h2>
+        <ul>
+            <li>Home</li>
+            <li>Contato</li>
+        </ul>
+        
+        <h3>Perguntas frequentes:</h3>
+        <ol>
+            <li>O que faz o HTMl?</li>
+            <li>Qual a função do Dev Front-end</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!--Tabela-->
+    <section>
+        <h2>Catalógo de Preços</h2>
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Samsung Galaxy Pocket</td>
+                <td>Celular com tela OLED</td>
+                <td>R$ 60,00</td>
+            </tr>
+            <tr>
+                <td>TekPix</td>
+                <td>Camera mais vendida do Brasil</td>
+                <td>R$ 160,00</td>
+            </tr>
+            <tr>
+                <td>Oba Phone</td>
+                <td>Endrew indica</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total: R$ 320,00</td> <!--esse é um exemplo de célula que ocupa várias colunas-->
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!--Input-->
+    <section>
+        <h2>Registro de Usuários</h2>
+        <form>
+            <label>Login:</label>
+            <input type="text">
+            <br>
+            <label>Senha:</label>
+            <input type="password">
+        </form>
+    </section>
+
+    <hr>
+
+    <!--Rodapé-->
+    <footer>
+        <h2>Rodapé</h2>
+        &lt;Desenvolvedo para a Web&gt;
+        <br>
+        <br>
+        <p>Desenvolvido por Nicolas &copy; 2025</p>
+    </footer>
+</body>
+</html>
