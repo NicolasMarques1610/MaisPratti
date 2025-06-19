@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Herói</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3e4eb;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .tabs {
+            width: 500px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Esconde os inputs */
+        .tabs input[type="radio"] {
+            display: none;
+        }
+
+        .tabs nav {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .tabs nav label {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            background: #eee;
+            cursor: pointer;
+            font-weight: bold;
+            border-right: 1px solid #ccc;
+            transition: background 0.3s;
+        }
+
+        .tabs nav label:last-child {
+            border-right: none;
+        }
+
+        .tabs nav label:hover {
+            background: #ddd;
+        }
+
+        /* Conteúdo das abas */
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        /* Mostrar conteúdo da aba ativa */
+        #tab1:checked ~ .content #content1,
+        #tab2:checked ~ .content #content2,
+        #tab3:checked ~ .content #content3,
+        #tab4:checked ~ .content #content4 {
+            display: block;
+        }
+
+        /* Estilo da aba ativa */
+        #tab1:checked ~ nav label[for="tab1"],
+        #tab2:checked ~ nav label[for="tab2"],
+        #tab3:checked ~ nav label[for="tab3"],
+        #tab4:checked ~ nav label[for="tab4"] {
+            background: #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group input[type="date"] {
+            font-size: 14px;
+        }
+
+        .input-group label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #45a049;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Heróis</h1>
+    <div class="tabs">
+        <!-- Inputs controladores -->
+        <input type="radio" name="tabs" id="tab1" checked>
+        <input type="radio" name="tabs" id="tab2">
+        <input type="radio" name="tabs" id="tab3">
+        <input type="radio" name="tabs" id="tab4">
+
+        <!-- Abas -->
+        <nav>
+            <label for="tab1">Dados</label>
+            <label for="tab2">Poderes</label>
+            <label for="tab3">Equipamentos</label>
+            <label for="tab4">Histórico</label>
+        </nav>
+
+        <form class="content">
+            <div class="tab-content" id="content1">
+                <div class="input-group">
+                    <label>Nome do Herói:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Nome Verdadeiro:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Data de Nascimento:</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Planeta de Origem:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label>Foto do Herói:</label>
+                    <input type="file">
+                </div>
+            </div>
+
+            <div class="tab-content" id="content2">
+                <div class="input-group">
+                  <label>Superpoderes:</label>
+                  <input type="text">
+                </div>
+                <div class="input-group">
+                  <label>Fraquezas:</label>
+                  <input type="text">
+                </div>
+                <div class="input-group">
+                  <label>Nível de Poder (1-10):</label>
+                  <input type="range" min="1" max="10">
+                </div>
+            </div>
+
+            <div class="tab-content" id="content3">
+                <div class="input-group">
+                  <label>Equipamentos:</label>
+                  <input type="text">
+                </div>
+                <div class="input-group">
+                  <label>Uniforme:</label>
+                  <input type="text">
+                </div>
+            </div>
+          
+            <div class="tab-content" id="content4">
+                <div class="input-group">
+                  <label>Inimigo principal:</label>
+                  <input type="text">
+                </div>
+                <div class="input-group">
+                  <label>Resumo da história:</label>
+                  <textarea rows="4"></textarea>
+                </div>
+                <button type="submit">Finalizar Cadastro</button>
+              </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
