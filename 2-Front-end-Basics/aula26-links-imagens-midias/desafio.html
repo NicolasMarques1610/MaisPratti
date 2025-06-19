@@ -1,0 +1,121 @@
+<!-- Um cabeçalho com menu de navegação
+ seção1 = galeria com duas imagens
+ seção2 = demonstração com um vídeo e um link pro youtube
+ um rodapé com mailto e tel.
+ Usar tags semânticas. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 0;
+        }
+        .header-group {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        .header-group nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .header-group nav ul li {
+            margin: 0 15px;
+        }
+        .header-group nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .section-group {
+            padding: 20px;
+            text-align: center;
+        }
+        .div-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f8efef;
+            border-radius: 10px;
+            margin: 0 70px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        figcaption {
+            font-style: italic;
+            color: #555;
+            margin: 4px 0 20px 0;
+        }
+        iframe {
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .footer-group {
+            background-color: #f1f1f1;
+            margin-top: 40px;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-group">
+        <nav>
+            <ul>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#demonstracao">Demonstração</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="galeria" class="section-group">
+        <div class="div-group">
+            <h2>Galeria de imagens</h2>
+            <figure>
+                <img src="../assets/thumb-1920-605592.png" alt="sasuke e naruto" width="300">
+
+                <figcaption>Figura 1: Naruto e Sasuke</figcaption>
+
+                <img src="../assets/batman_quadrinhos_capa.jpg" alt="batman" width="300">
+
+                <figcaption>Figura 2: Batman</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="demonstracao" class="section-group">
+        <div class="div-group">
+            <h2>Vídeos para demonstrar</h2>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/8ZFiHulmOPE" title="Pica-pau Os Trabalhadores da Floresta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"allowfullscreen></iframe>
+            
+            <p>Vídeo do canal Canalha, para assistir clique <a href="https://youtu.be/DjdyA_d8O2o?si=A1ZCQhSA8xgMQrLp">aqui.</a></p>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer-group">
+        <p>Para nos contactar, nos envie um e-mail clicando aqui: <a href="mailto:suporte@naorespondemos.com">suporte@naorespondemos.com</a></p>
+        <p>Pode nos contactar por nosso telefone clicando: <a href="tel:+55519921212122">(51) 99212-12122</a></p>
+    </footer>
+</body>
+</html>
