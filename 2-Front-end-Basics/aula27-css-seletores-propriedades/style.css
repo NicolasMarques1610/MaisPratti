@@ -1,0 +1,95 @@
+/* Seletores
+só o nome é seletor de tipo, daquele tipo no HTML, como h1 ou p;
+. + nome, exemplo .destaque é utilizado para classes;
+# + nome, utilizado para id;
+o combinado, por exemplo ul li;
+o descendente, por exemplo ul li.importante;
+de pseudoclasses, como com a:hover que acontece quando se passa o mouse em cima do elemento;
+*/
+
+/* 
+PESO DOS SELETORES
+Seletor inline: 1000
+Seletor de ID: 100
+Seletor de Class: 10
+Seletor de Tipo: 1
+*/
+
+/* 
+  A ordem importa, se eu chamar o mesmo seletor 2 vezes, o último é que se manterá, se tiver duas cores definidas pega do último
+*/
+
+h1 { 
+  color: blue;
+  font-size: 32px;
+}
+
+p {
+  color: gray;
+  line-height: 1.5;
+}
+
+.destaque {
+  background-color: yellowgreen;
+  font-weight: bold;
+}
+
+#cabecalho {
+  background-color: black;
+  color: white;
+}
+
+ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+ul li.importante {
+  color: red;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.diferente {
+  color: black !important; /* se colocar !important, esse elemento se torna o mais importante, uma má prática */
+}
+
+#unico {
+  color: navy;
+}
+
+div {
+  color: blue;
+  margin: 10px;
+  border: 1px solid red;
+  font-size: small;
+}
+
+div p {
+  border: inherit;
+  color: inherit;
+}
+
+h1 + p { /*Significa que vai se selecionar o paragrafo imediatamente depois do h1*/
+  color: green;
+}
+
+h1 ~ p { /*Significa que todos os paragrafo depois do h1 vão ficar em itálico*/
+  font-style: italic;
+}
+
+h2 > a { /*Significa que o A dentro do h2 vai receber a estilizacao, mas só o filho direto, o segundo não*/
+  color: green;
+}
