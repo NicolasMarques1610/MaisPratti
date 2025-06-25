@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model - Dimensões</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      font-size: 20px;
+    }
+
+    div {
+      border: 1px solid black;
+    }
+
+    h2 {
+      border: inherit;
+      width: 200px;
+      height: 100px;
+      padding: 10px;
+      margin: 10px;
+      box-sizing: border-box; /* utilizando isso é ignorado o calculo abaixo e apenas utilizado width e height para largura e altura total */
+    }
+
+    div.dimensions {
+      font-size: 12px;
+    }
+
+    div.dimensions h2 {
+      border: inherit;
+      height: 20pc;
+      font-size: 2rem;/*2em; em significa 2 vezes o tamanho do elemento pai, se font size é 12px no pai, nesse é 24px. Já o rem pega do elemento raiz, do body por exemplo.*/
+      width: 50%;
+      min-width: 200px;
+      height: 100vh;
+    }
+    /* largura total = width + padding * 2 + border * 2 */
+    /* altura total = height + padding * 2 + border * 2 */
+  </style>
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Conteúdo</h2>
+  </div>
+
+  <div class="dimensions">
+    <h2>Conteúdo</h2>
+  </div>
+</body>
+</html>

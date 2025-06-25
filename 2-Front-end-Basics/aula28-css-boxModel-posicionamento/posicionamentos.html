@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions</title>
+  <style>
+    /* 
+    Static
+    Relative
+    Absoluto
+    Fixo
+    Sticky - gruda até o tamanho do height
+    */
+
+    .caixa {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+      margin-bottom: 20px;
+    }
+
+    .static {
+      position: static;
+      background-color: lightblue;
+    }
+
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 200px;
+      background-color: lightgreen;
+    }
+
+    .pai {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: #ddd;
+    }
+
+    .absoluta {
+      position: absolute;
+      /* para utlizar absolute tem que estar dentro de uma pai com uma estrutura relativa */
+      top: 0;
+      right: 10px;
+      width: 100px;
+      height: 500px;
+      background-color: orange;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 200px;
+      right: 20px;
+      background-color: red;
+      color: white;
+      padding: 10px;
+    }
+
+    .conteudo {
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa">Caixa</div>
+
+  <div class="caixa static">Caixa Static</div>
+
+  <div class="caixa relative">Caixa Relative</div>
+
+  <div class="pai">
+    <div class="absoluta">Caixa Absoluta</div>
+    dadadadadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  </div>
+
+  <div class="fixed">Botão Fixo</div>
+
+  <div class="conteudo">
+    <h2 class="sticky">Meu Título</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos voluptatem veniam numquam commodi ratione incidunt, ipsum consequatur pariatur omnis quaerat vel suscipit autem illo voluptates culpa, alias et assumenda.
+    Magni ratione quibusdam maiores ducimus fuga ullam voluptate, vero enim similique a cum nostrum impedit harum et consequatur alias itaque, tenetur, quaerat nobis! Officia incidunt ullam quae non qui explicabo!
+    Aperiam quae minus consequatur praesentium ducimus eius laboriosam officiis repellendus aspernatur temporibus, totam dolorum nisi mollitia nemo optio repudiandae! Nisi autem quam ad placeat natus perferendis dolores, voluptate commodi maxime.
+    Ea quas ullam ab possimus odio dolore cumque minus tempora deserunt dicta nobis ducimus autem amet nulla, sapiente quo, corrupti quis recusandae impedit. Veniam distinctio eveniet inventore illum vel quibusdam?
+    Fugit voluptatibus hic ducimus recusandae qui saepe architecto quae iusto aliquid dolorum suscipit possimus beatae unde tenetur incidunt, quasi odio odit deleniti ab. Voluptas quae exercitationem possimus optio repudiandae. A!
+    Enim, asperiores consectetur deleniti maxime nisi eligendi ipsam eius exercitationem fugit vero omnis aut iure nobis voluptatem at cupiditate sit obcaecati dicta quaerat fugiat earum. Consequuntur doloremque officiis voluptate porro.
+    Aut possimus dignissimos totam molestias eveniet quis autem cumque aliquid ipsam nesciunt ex incidunt natus, ipsa fugit rem eum optio, similique repellat veritatis! Explicabo reprehenderit nam labore quibusdam culpa esse!
+    Enim dolorum eius eaque cupiditate animi adipisci, officiis error non ducimus laboriosam eligendi eos, architecto possimus provident omnis vel rerum sit reiciendis quas dolore quisquam illo accusantium perspiciatis! Explicabo, nihil?
+    Impedit voluptates voluptate debitis et aliquam corrupti eaque consequatur iure maiores fugiat optio, nisi, ea asperiores vitae quos quasi odio sapiente vel voluptatem labore non quas in deleniti? Pariatur, ipsam?
+    Nobis, ipsam necessitatibus similique repellat accusamus corrupti magni nulla rem tempora consequatur. Fugiat itaque inventore ab molestias blanditiis ipsum, beatae cum nemo quam, impedit voluptatum sunt quisquam maiores mollitia ad!
+    Blanditiis aperiam culpa itaque. Voluptatum quos eos vel, ab provident, quibusdam fugiat delectus similique nesciunt ratione soluta, voluptatem aspernatur ducimus accusantium. Molestias iusto quasi recusandae mollitia quidem, ab laborum rem!
+    Minima, libero. Consequatur ut aspernatur autem illo vitae. Dolor assumenda temporibus consequatur quam eos! Illum ullam autem repudiandae placeat, dolores nostrum sunt accusamus, architecto molestiae obcaecati, recusandae laborum voluptatum voluptatibus.
+    Ex numquam ipsum minima tempore fugit sunt rerum id corrupti! Eos nam quae sint quasi dolorum cumque iusto quas, earum temporibus tempore in minima obcaecati pariatur perspiciatis blanditiis officiis ullam.
+    Iste necessitatibus molestiae blanditiis natus debitis nam nostrum. Laborum earum numquam tempora voluptatum deserunt ullam voluptatibus fugiat, eum minima libero quos vero expedita rerum animi beatae saepe quasi dolore iusto?
+    Laudantium autem, numquam unde nobis nisi fugiat provident eveniet molestias id quisquam ab minima facere, qui fuga. Officiis, omnis est beatae tenetur illo aliquid magni sequi id iste nostrum ad!
+    Quisquam aliquam expedita sint reprehenderit iste! Aliquam ipsam pariatur voluptatem fugit nostrum asperiores natus maxime reprehenderit rerum nemo facere eum architecto nam odio ut esse laboriosam nisi, commodi provident iusto!
+    Autem, temporibus et sint id corporis non culpa asperiores unde! Sequi non amet accusamus modi, unde alias deserunt ducimus reprehenderit officiis doloribus. Fugiat aliquam odio in maiores aut accusantium ipsam.
+    Exercitationem animi minima repudiandae officiis ullam suscipit fuga! Iure qui quas placeat molestias voluptate incidunt soluta doloremque id! Nesciunt, maiores eaque? Nulla amet in natus voluptatibus beatae commodi optio consectetur.
+    Quidem totam fuga pariatur accusantium architecto voluptatibus reiciendis doloribus eum vitae, corporis asperiores sapiente veniam id rem excepturi atque quisquam molestiae laboriosam nam facere! Omnis eum quas sunt eligendi nisi?
+    Veritatis deleniti modi officia quae laudantium sint atque, quisquam maxime esse dolorum quasi harum, hic ipsam cumque tempore error, eaque quibusdam assumenda vero. Sint eligendi provident harum exercitationem similique repudiandae!</p>
+  </div>
+</body>
+</html>
