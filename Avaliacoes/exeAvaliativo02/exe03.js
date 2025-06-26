@@ -14,6 +14,9 @@ function palavrasUnicas(frase) {
       if(palavras[j] === palavraAtual) {
         cont++;
       }
+      if(cont > 1) {
+        break;
+      }
     }
 
     if(cont === 1) {
