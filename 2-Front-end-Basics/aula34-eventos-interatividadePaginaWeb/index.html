@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Declara que o documento está usando HTML5 -->
+<html lang="en"> <!-- Define o idioma da página como inglês -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>My Hero Academy</title> <!-- Título exibido na aba do navegador -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> <!-- Link para a fonte Bangers do Google Fonts -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+
+<body id="topo">
+    <!-- O header está criando uma divisão, com botões, menu de navegação-->
+    <header>
+        <div class="container">
+            <!-- Botão de menu para dispositivos móveis -->
+            <button id="navToggle" class="nav-toggle" aria-label="Abrir Menu">+</button>
+
+            <!-- Menu de navegação principal -->
+            <nav id="navMenu" class="nav">
+                <a href="#" class="logo">
+                    <img src="../assets/academia_yuei_ua_by_academy_yuhei_da9v7r1-fullview.png" alt="Logo da Academia U.A.">
+                </a>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal com destaque da página -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Bem-vindo ao cadastro da Academia U.A.!</h1>
+            <p>Torne-se o próximo herói profissional — prepare-se para entrar na U.A.!</p>
+            <a href="" class="btn">Fale Conosco</a>
+        </div>
+    </section>
+
+    <!-- Seção de serviços oferecidos -->
+    <section id="services" class="services container">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Treinamento</h3>
+                <img src="../assets/treino_ua.jpg" alt="treinamento U.A.">
+            </div>
+            <div class="card">
+                <h3>Missões</h3>
+                <img src="../assets/luta_ua.jpg" alt="simulação U.A.">
+            </div>
+            <div class="card">
+                <h3>Os Melhores</h3>
+                <img src="../assets/heros_ua.webp" alt="heróis U.A.">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de contato com formulário -->
+    <section id="contact" class="contact container">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <!-- Campo Nome -->
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-msg"></span>
+            </div>
+
+            <!-- Campo Email -->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-msg"></span>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div class="form-group">
+                <label for="message">Sua mensagem</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <span class="error-msg"></span>
+            </div>
+
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>  
+
+    <!-- Rodapé do site -->
+    <footer class="footer">
+        <div class="container">
+            <p>2025 Academy U.A. Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Link para o script JS -->
+    <script src="app.js"></script>
+    <!-- Botão flutuante para voltar ao topo -->
+    <a href="#topo" class="btn-topo" aria-label="Voltar ao topo">⬆</a>
+</body>
+
+</html>

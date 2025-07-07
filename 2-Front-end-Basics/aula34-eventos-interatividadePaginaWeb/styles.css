@@ -1,0 +1,246 @@
+/* Reset básico de margens, espaçamentos e box-sizing para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte Bangers aplicada em títulos e logo */
+h1, h2, .logo {
+    font-family: 'Bangers', cursive;
+}
+
+/* Estilização geral do body */
+body {
+    font-family: 'Trebuchet MS', sans-serif; /* Fonte principal */
+    line-height: 1.5; /* Altura da linha para melhor leitura */
+    color: #000000; /* Cor do texto */
+    background-color: #ffffff; /* Cor de fundo */
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o cabeçalho */
+    position: sticky; /* Fixa o cabeçalho no topo */
+    top: 0; /* Fixa o cabeçalho no topo da página */
+}
+
+/* Container para centralizar e limitar largura do conteúdo */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Cabeçalho fixo com sombra */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+.logo img {
+    max-width: 50px;  /* Tamanho máximo */
+    width: 100%;       /* Responsivo até esse limite */
+    height: auto;
+    display: block;
+}
+
+/* Estilo base do menu de navegação */
+.nav {
+    display: flex;
+}
+
+/* Remove marcadores da lista e alinha os itens na horizontal */
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+/* Espaçamento entre os itens do menu */
+nav li + li {
+    margin-left: 1rem;
+}
+
+/* Estilização dos links do menu */
+.nav a {
+    text-decoration: none;
+    color: #FFD700;
+    padding: 1rem;
+    display: block;
+    font-weight: bold;
+}
+
+/* Efeito de hover nos links do menu */
+.nav a:hover {
+    color: #ffffff;
+}
+
+/* Botão de abrir menu (hambúrguer) - escondido por padrão */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #FFD700;
+}
+
+/* Estilos para telas pequenas (mobile) */
+@media(max-width: 462px) {
+    .nav {
+        /* O valor `none` aqui no position está incorreto; deveria ser `absolute` ou `relative` */
+        position: none;
+        left: 0;
+        right: 0;
+        background: #003366;
+        flex-direction: column;
+        max-height: 0; /* Oculta o menu inicialmente */
+        overflow: hidden;
+        transition: max-height 0.3s; /* Transição suave */
+    }
+
+    .nav.open {
+        max-height: 200px; /* Altura quando o menu é aberto */
+    }
+
+    .nav-toggle {
+        display: block; /* Exibe o botão de menu em telas pequenas */
+    }
+}
+
+/* Estilo da seção hero (destaque inicial) */
+.hero {
+    background-color: #f0f0f0;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #003366;
+}
+
+/* Espaçamento no botão dentro da hero */
+.hero .btn {
+    margin-top: 1rem;
+    background-color: #FFD700;
+    padding: 0.5rem 0.9rem;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção de serviços com padding e centralização */
+.services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Layout em grid para os cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Estilo individual dos cards */
+.card {
+    padding: 1rem;
+    border: 2px solid #003366;
+    border-radius: 8px;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+/* Título dos cards */
+.card h3 {
+    color: #003366;
+}
+
+.card img {
+    max-width: 100%; /* Imagem responsiva */
+    height: 220px;          /* Aumenta a altura visível */
+    object-fit: cover;      /* Cobre o espaço mantendo proporção */
+    margin-top: 0.5rem;
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Seção de contato */
+.contact {
+    padding: 2rem 0;
+}
+
+/* Agrupamento de campos do formulário */
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os rótulos e inputs à esquerda */
+}
+
+/* Estilo para os rótulos */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo dos inputs e textarea */
+.form-group input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Mensagem de erro no formulário */
+.error-msg { 
+    color: #e74c3c;
+    font-size: 0.8rem;
+    height: 1em;
+}
+
+/* Estilo geral do botão */
+.btn {
+    display: inline-block;
+    background: #003366;
+    color: #FFD700;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* Rodapé */
+.footer {
+    background-color: #003366;
+    color: #FFD700;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Estilo do botão de voltar ao topo */
+.btn-topo {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFD700; /* Cor da U.A. */
+    color: #003366;
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra para o botão */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    display: none; /* Começa escondido */
+    transition: background 0.3s ease;   /* Transição suave para a cor de fundo */
+}
+
+/* Exibe o botão quando a classe 'show' é adicionada */
+.btn-topo:hover {
+    background-color: #FFC107; /* um pouco mais escuro no hover */
+}
